@@ -15,7 +15,7 @@ public class WelcomeController {
     @RequestMapping("/index.html")
     public String index(Model model) {
         model.addAttribute("visitorCount", visitorCount++);
-        return "WEB-INF/jsp/index.jsp";
+        return "index";
     }
 
 }
