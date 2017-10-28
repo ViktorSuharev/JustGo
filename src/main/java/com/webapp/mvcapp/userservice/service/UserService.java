@@ -1,12 +1,14 @@
 package com.webapp.mvcapp.userservice.service;
 
+import com.webapp.mvcapp.userservice.datamodel.AppUser;
+
 public interface UserService {
 
-    void register(String login, String password, String name, long photoId);
+    boolean register(String login, String password, String name, long photoId);
 
-    void register(String login, String password, String name, long photoId, String description);
+    boolean register(String login, String password, String name, long photoId, String description);
 
-    void login();
+    AppUser login(String login, String password);
 
-    void unregister();
+    boolean unregister(String login);
 }
