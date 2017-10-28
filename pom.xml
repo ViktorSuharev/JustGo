@@ -37,6 +37,20 @@
             <artifactId>postgresql</artifactId>
             <version>42.1.4</version>
         </dependency>
+        <!-- hashing lib -->
+        <dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+        <!-- no boilerplate (constructor, getter setter, builder. Please install IDEA lombok plugin)
+            Settings -> Plugins -> Lombok Plugin -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
         <finalName>webapp</finalName>
